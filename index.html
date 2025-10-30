@@ -3,47 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
+  <title>WELCOME - My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Inter or appropriate Korean font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- ===== Header / Nav ===== -->
   <header class="site-header">
+    <div class="header-content">
+      <h1 class="header-title">WELCOME</h1>
+      <!-- Date & Time Timer (Right Side) -->
+      <div id="date-timer" class="date-timer"></div>
+    </div>
+    
     <nav class="nav">
       <a class="logo" href="#hero">MyPortfolio</a>
       <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">☰</button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== Hero ===== -->
-  <section id="hero" class="hero">
-    <h1>안녕하세요, 저는 <span class="accent">[Your Name]</span> 입니다.</h1>
-    <p>웹 개발자 지망생 • HTML · CSS · JavaScript</p>
-    <a href="#projects" class="btn">프로젝트 보러가기</a>
-  </section>
-
-  <!-- ===== About ===== -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about-grid">
-      <img src="images/profile.jpg" alt="프로필 사진" class="avatar" />
-      <div>
-        <p>코딩을 배우며 작은 것부터 꾸준히 만들어가는 개발자입니다. 문제를 단순하게 정의하고, 사용자에게 가치를 주는 것을 즐깁니다.</p>
-        <ul class="tags">
-          <li>#HTML</li>
-          <li>#CSS</li>
-          <li>#JavaScript</li>
-          <li>#Responsive</li>
-        </ul>
-      </div>
+  <!-- ===== Hero (Home Section) ===== -->
+  <section id="hero" class="hero section">
+    <div class="hero-content">
+      <h2>웹 개발자 포트폴리오</h2>
+      <p>새로운 도전을 통해 성장하고 가치를 창출하는 개발자입니다.</p>
+      <a href="#about" class="btn">나에 대해 더 알아보기</a>
     </div>
   </section>
 
+  <!-- ===== About Section (경력 및 목표) ===== -->
+  <section id="about" class="section about-section">
+    <h2>About Me: 나의 여정 및 목표</h2>
+    
+    <div class="about-content-wrapper">
+        <!-- 취업을 위해 걸어온 스텝 -->
+        <article class="step-card">
+            <h3>1. 취업을 위해 걸어온 스텝</h3>
+            <ol class="step-list">
+                <li>ADSP 자격증 취득</li>
+                <li>컴퓨터활용능력 1급 취득</li>
+                <li>토익 700점 달성</li>
+                <li>ISO 9001 심사원 교육과정 수료</li>
+                <li>IATF 16949 교육 수료</li>
+                <li>학생회 활동을 통한 리더십 능력 향상</li>
+            </ol>
+        </article>
+
+        <!-- 내년 목표 -->
+        <article class="step-card">
+            <h3>2. 내년 목표</h3>
+            <ol class="step-list">
+                <li>기사 자격증 취득</li>
+                <li>OPIc IH 취득</li>
+                <li>인턴 경험 확보 (가능하면)</li>
+                <li>실전 면접 준비 및 합격</li>
+            </ol>
+        </article>
+    </div>
+  </section>
+
+  <!-- Projects, Contact, Footer Sections (Original structure preserved) -->
+  
   <!-- ===== Projects ===== -->
   <section id="projects" class="section">
     <h2>Projects</h2>
@@ -96,7 +122,7 @@
   </section>
 
   <footer class="site-footer">
-    <p>© 2025 My Portfolio • <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></p>
+    <p>© 2025 My Portfolio</p>
   </footer>
 
   <script src="app.js"></script>
